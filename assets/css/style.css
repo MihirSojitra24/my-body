@@ -5765,6 +5765,10 @@ button:focus {
 
 /* =========== PAGES NEW STYLE CSS CODE START (MIHIR)================ */
 
+body {
+    overflow-x: hidden;
+}
+
 .page_main {
     float: left;
     width: 100%;
@@ -5772,6 +5776,8 @@ button:focus {
     font-family: 'Pluto Cond';
     font-weight: normal;
     word-break: break-word;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .page_header {
@@ -5835,6 +5841,11 @@ button:focus {
     background: #00A1ED;
     box-shadow: 0px 2px 5px #00000029;
     border-radius: 100px;
+    transition: 0.3s linear;
+}
+
+.blue_btn:hover {
+    background: #324b58;
 }
 
 section {
@@ -5979,6 +5990,7 @@ footer.page_footer {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.3s linear;
 }
 
 .ftr_blue_btn .next_circle_btn {
@@ -5995,6 +6007,10 @@ footer.page_footer {
 
 .ftr_blue_btn .next_circle_btn img {
     width: 13px;
+}
+
+.ftr_blue_btn:hover {
+    background: #324b58;
 }
 
 
@@ -6039,6 +6055,8 @@ footer.page_footer {
 
 .large_card .large_card_wrapper:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.16);
+    background-position: -50px;
+    opacity: .7;
 }
 
 .card_orange {
@@ -6666,6 +6684,7 @@ footer.page_footer {
 .enrol_person_num {
     float: left;
     width: 100%;
+    padding-bottom: 32px;
 }
 
 
@@ -6775,6 +6794,10 @@ footer.page_footer {
 
 /** ---------- PAGE 7 - Enrol Now START CSS -------- **/
 
+.page7_wrapper.wrapper {
+    max-width: 828px;
+}
+
 .enrolNow_page .inner_page_content {
     padding-top: 38px;
 }
@@ -6799,7 +6822,7 @@ footer.page_footer {
 }
 
 .enrolNow_page .page_title .readMore_ttl_top .arw_blue_btn img {
-    width: 12px;
+    width: 13px;
 }
 
 .enrolNow_page .page_title h5 {
@@ -6814,11 +6837,493 @@ footer.page_footer {
 .page_enrolNowDetails_Sec {
     float: left;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
+}
+
+.enrolNowDetails_Sec_wrapper {
+    margin: 0 -20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.enrolNowDetails_Sec_wrapper .leftForm_sec,
+.enrolNowDetails_Sec_wrapper .rightsummary_sec {
+    width: 50%;
+    padding: 0 20px;
+    float: left;
+}
+
+.page_enrolNowDetails_Sec .form_field {
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.page_enrolNowDetails_Sec .form_field label {
+    color: #000000;
+    text-transform: capitalize;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: bold;
+    padding-bottom: 9px;
+    margin: 0;
+}
+
+.page_enrolNowDetails_Sec .form_field .form-control {
+    float: left;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #A7A7A781;
+    border-radius: 4px;
+    padding: 3px 12px;
+    margin: 0;
+    height: 44px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    outline: none;
+    box-shadow: none;
+}
+
+.page_enrolNowDetails_Sec .form_field .input-group .form-control {
+    width: auto;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.page_enrolNowDetails_Sec .input-group-prepend .input-group-text {
+    background: #EAEAEA 0% 0% no-repeat padding-box;
+    border: 1px solid #A7A7A781;
+    border-radius: 4px 0px 0px 4px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.page_enrolNowDetails_Sec .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 0.4;
+}
+
+.page_enrolNowDetails_Sec .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 0.4;
+}
+
+.page_enrolNowDetails_Sec .form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 0.4;
+}
+
+.page_enrolNowDetails_Sec .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 0.4;
+}
+
+.enrolNowDetails_Sec_wrapper .rightsummary_sec {
+    padding-top: 77px;
+}
+
+.enrolNowDetails_Sec_wrapper .rightsummary_sec h5 {
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: normal;
+    padding-bottom: 9px;
+    margin: 0;
+}
+
+.orderSummary_box {
+    float: left;
+    width: 100%;
+    background: #FFF49E 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 48px 20px 60px;
+    text-align: center;
+}
+
+.orderSummary_box h3 {
+    float: left;
+    width: 100%;
+    color: #324B58;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 26px;
+}
+
+.orderSummary_box_tags {
+    float: left;
+    width: 100%;
+}
+
+.orderSummary_box_tags .order_tags {
+    background: #324B58 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    float: left;
+    width: 53%;
+    margin: 1%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: left;
+}
+
+.orderSummary_box_tags .order_tags img {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.orderSummary_box_tags .order_tags:nth-child(odd) {
+    margin-left: 0;
+    width: 45%;
+}
+
+.orderSummary_box_tags .order_tags:nth-child(even) {
+    margin-right: 0;
+}
+
+.enrolNow_page .inner_page_content .page_ftr_btn {
+    text-align: center;
+    margin-top: 20px;
 }
 
 
+/** ANIMATIon **/
+
+
+/* .fadeInUp {
+    -webkit-transform: translateX(25px) translateY(4em) rotateZ(-5deg);
+    -moz-transform: translateX(25px) translateY(4em) rotateZ(-5deg);
+    transform: translateX(25px) translateY(4em) rotateZ(-5deg);
+}
+
+.fadeInUp.start_animate {
+    opacity: 1;
+    -webkit-transform: rotateZ(-2deg) translateX(25px);
+    -moz-transform: rotateZ(-2deg) translateX(25px);
+    transform: rotateZ(-2deg) translateX(25px);
+} */
+
+
 /* =========== PAGES NEW STYLE CSS CODE END (MIHIR)================ */
+
+
+/* =========== RESPONSIVE MOBILE VIEW PAGES NEW STYLE CSS CODE START (MIHIR)================ */
+
+@media screen and (max-width:1200px) {
+    footer.page_footer {
+        background-position: bottom center;
+    }
+    .header_content ul li.back_btn {
+        position: relative;
+        left: 0;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:821px) {
+    .page2_cards_Sec_wrapper {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .large_card {
+        width: 100%;
+        padding: 11px 0;
+    }
+    .page3_cards_Sec_wrapper {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .small_card {
+        width: 50%;
+    }
+    .enrolNowDetails_Sec_wrapper .leftForm_sec,
+    .enrolNowDetails_Sec_wrapper .rightsummary_sec {
+        width: 100%;
+    }
+    .enrolNowDetails_Sec_wrapper .rightsummary_sec {
+        padding-top: 10px;
+    }
+    .orderSummary_box {
+        text-align: left;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .page_contentmain {
+        padding-top: 80px;
+    }
+    .page_header {
+        height: 80px;
+    }
+    .header_content ul li.getStart_BtnLi {
+        display: none;
+    }
+    .inner_page_content {
+        padding-top: 41px;
+    }
+    .page_question ul li {
+        padding-bottom: 25px;
+    }
+    footer.page_footer {
+        background: url(../images/wave_Mobile.svg) no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    .page2 .page_title {
+        padding-bottom: 13px;
+        text-align: left;
+    }
+    .large_card .large_card_wrapper {
+        height: 150px;
+        background-size: cover;
+    }
+    .completed_stage .large_card_wrapper {
+        border: 3px solid #ffffff;
+    }
+    .large_card .large_card_wrapper .card_dtl h3 {
+        /* font-size: 21px; */
+    }
+    .large_card .large_card_wrapper .card_icn {
+        height: 64px;
+        width: 55px;
+    }
+    .page_progress_sec {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        padding: 12px 20px;
+        display: block;
+    }
+    .page_progress_sec .left_side {
+        width: 100%;
+    }
+    .page_progress_sec .left_side p {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+    .page_progress_sec .right_side {
+        text-align: right;
+        float: right;
+        width: auto;
+        color: #ffffff;
+    }
+    .page_progress_sec .right_side span {
+        font-size: 10px;
+        width: 80px;
+        display: inline-block;
+        font-weight: normal;
+    }
+    .page_progress_sec .right_side .arw_blue_btn {
+        margin-left: 10px;
+    }
+    .progress_bar_main {
+        max-width: 200px;
+        margin-top: 15px;
+    }
+    section.page2 .page2_cards_Sec {
+        margin-bottom: 40px;
+    }
+    /** PAGE 3 **/
+    .page3 .page_title {
+        text-align: left;
+    }
+    .page3_wrapper .inner_page_content {
+        padding-top: 22px;
+    }
+    .page3 .page_title h6 {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    .page3 .page_title h2 {
+        font-size: 20px;
+        line-height: normal;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .page3_cards_Sec_wrapper {
+        margin: 0 -2.5px;
+        max-width: 378px;
+    }
+    .small_card {
+        width: 50%;
+        padding: 2.5px;
+    }
+    .page3 .page_progress_sec .left_side p {
+        display: none;
+    }
+    /** PAGE 4 **/
+    .page4 .page_title {
+        text-align: left;
+    }
+    .page4_wrapper .inner_page_content {
+        padding-top: 22px;
+    }
+    .page4 .page_title h6 {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    .page4 .page_title h2 {
+        font-size: 20px;
+        line-height: normal;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .card_box .card_box_title {
+        padding: 15px 25px;
+    }
+    .card_box .card_box_title h3 {
+        max-width: 80%;
+    }
+    .card_box_detail {
+        padding: 12px 25px;
+    }
+    .card_box_detail p {
+        line-height: 31px;
+        margin-bottom: 25px;
+    }
+    .page_card_details_2 {
+        text-align: left;
+        padding: 40px 0;
+    }
+    .page_card_details_2 .custom_radio_toggle {
+        justify-content: flex-start;
+    }
+    .switch-field label {
+        line-height: 28px;
+    }
+    .page_ftr_btn {
+        margin-bottom: -80px;
+        position: relative;
+        z-index: 2;
+        margin-top: 10px;
+    }
+    .right_img_c .img_withcontent_wrapper {
+        flex-direction: column-reverse;
+    }
+    .img_withcontent .left_box,
+    .img_withcontent .right_box {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .right_img_c.img_withcontent .right_box,
+    .img_withcontent.left_img_c .right_box {
+        padding: 0;
+        padding-bottom: 20px;
+        margin: 0 -10px;
+        float: none;
+        width: auto;
+    }
+    .img_withcontent.left_img_c .img_withcontent_wrapper {
+        flex-direction: column-reverse;
+    }
+    .img_withcontent.mt-5 {
+        margin: 0 !important;
+    }
+    .ftr_blue_btn:hover {
+        background: #00A1ED;
+    }
+    .health_switch label {
+        min-width: 100px;
+        padding: 8px;
+    }
+    /** Enrol Now Page **/
+    .enrolNow_page .page_title h5 {
+        text-align: left;
+    }
+    .enrolNow_page .page_title .readMore_ttl_top .arw_blue_btn img {
+        width: 16px;
+    }
+    .page_enrolNowDetails_Sec {
+        padding-top: 20px;
+    }
+    .enrolNowDetails_Sec_wrapper {
+        margin: 0;
+    }
+    .enrolNowDetails_Sec_wrapper .leftForm_sec,
+    .enrolNowDetails_Sec_wrapper .rightsummary_sec {
+        padding: 0;
+    }
+    .orderSummary_box h3 {
+        padding-bottom: 14px;
+    }
+    .enrolNow_page .ftr_blue_btn {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .header_content ul li.logo img {
+        max-width: 230px;
+        height: auto;
+    }
+    .page_title h4 {
+        font-size: 28px;
+        line-height: normal;
+    }
+    .page_title h2 {
+        font-size: 28px;
+        line-height: normal;
+    }
+    .progress_bar_main {
+        max-width: 160px;
+    }
+    .progress_bar {
+        width: 100%;
+    }
+    .small_card .small_card_wrapper .card_dtl h3 {
+        font-size: 15px;
+    }
+    .health_switch label {
+        min-width: 92px;
+        padding: 8px;
+    }
+    .orderSummary_box_tags .order_tags,
+    .orderSummary_box_tags .order_tags:nth-child(odd) {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .header_content ul li.logo img {
+        max-width: 200px;
+    }
+    .progress_bar_main {
+        max-width: 120px;
+    }
+    .small_card .small_card_wrapper .card_dtl h3 {
+        font-size: 12px;
+    }
+    .enrolNow_page .ftr_blue_btn {
+        font-size: 13px;
+    }
+}
+
+
+/* =========== RESPONSIVE MOBILE VIEW PAGES NEW STYLE CSS CODE END (MIHIR)================ */
 
 
 /*# sourceMappingURL=style.css.map */
