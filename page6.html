@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="https://my-body.co/assets/frontend/plugins/bootstrap-4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://my-body.co/assets/frontend/plugins/fontawesome-pro-5.6.1-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://my-body.co/assets/frontend/plugins/slick-1.8.1/slick/slick.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -29,7 +30,7 @@
                             <a href="page5.html"><img src="assets/images/arrow_back.png" alt="Back Icn" /></a>
                         </li>
                         <li class="logo">
-                            <!-- <a href="#"><img src="assets/images/mybody_logo.png" alt="logo" /></a> -->
+                            <a href="index.html"><img src="assets/images/mybody_logo.png" alt="logo" /></a>
                         </li>
                         <li class="getStart_BtnLi"><a href="index.html" class="blue_btn">Get Started Now</a></li>
                     </ul>
@@ -41,12 +42,12 @@
             <section class="page4">
                 <div class="page4_wrapper wrapper">
                     <div class="inner_page_content">
-                        <div class="page_title">
+                        <div class="page_title" data-aos="fade-down" data-aos-duration="1500">
                             <h6>What would you like to learn more about?</h6>
                             <h2>Genes and nutrition</h2>
                         </div>
                         <div class="page_card_details_Sec">
-                            <div class="card_box">
+                            <div class="card_box" data-aos="fade-up" data-aos-duration="3000">
                                 <div class="card_box_title">
                                     <h3>Weight Management</h3>
                                     <span class="card_ttl_img"><img src="assets/images/icons_white_weight.png" alt="icn"/></span>
@@ -56,7 +57,7 @@
                                     <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 </div>
                             </div>
-                            <div class="page_card_details_2">
+                            <div class="page_card_details_2" data-aos="fade-up-right" data-aos-duration="3000">
                                 <div class="page_card_details_2_wrapper">
                                     <p>How Many times a day do you snack?</p>
                                     <div class="custom_range-slider">
@@ -90,7 +91,11 @@
     <script type="text/javascript" src="https://my-body.co/assets/frontend/js/config/slick.js"></script>
     <script type="text/javascript" src="https://my-body.co/assets/frontend/js/base.js"></script>
     <script type="text/javascript" src="https://my-body.co/assets/frontend/js/home.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
